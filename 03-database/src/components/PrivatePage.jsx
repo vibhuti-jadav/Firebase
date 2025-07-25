@@ -3,7 +3,6 @@ import { Navigate } from 'react-router'
 import { auth } from '../services/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
-
 const PrivatePage = ({children}) => {
 
      const [user] = useAuthState(auth);

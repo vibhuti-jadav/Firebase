@@ -3,9 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Products from './components/Products'
 import Login from './components/Login'
-import Logout from './components/Logout'
+import PrivatePage from './components/PrivatePage'
 import Addproduct from './components/AddProduct'
-import PrivatePage from './components/PrivatePgae'
 
 const AllRoutes = () => {
   return (
@@ -13,14 +12,13 @@ const AllRoutes = () => {
 
         <Routes>
             <Route path='/' element={<Home/>}>  </Route>
-            <Route path='/addProduct' element={<Addproduct/>}>  </Route>
-            <Route path='/products' element={
+            <Route path='/AddProducts' element={<Addproduct/>}>  </Route>
+            <Route path='/Products' element={
                 <PrivatePage>
                     <Products/>
                 </PrivatePage>
                 }>  </Route>
-            <Route path='/login' element={<Login/>}>  </Route>
-            <Route path='/logout' element={<Logout/>}>  </Route>
+            <Route path='/Login' element={<Login/>}>  </Route>
         </Routes>
 
     </div>
