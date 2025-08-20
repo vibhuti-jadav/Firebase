@@ -12,7 +12,7 @@ import { db } from "../config/firebaseConfig";
 
 const studentCollection = collection(db, "student");
 
-export const fetchStudent = createAsyncThunk("student/fetch", async (_, thunkAPI) => {
+export const fetchStudent = createAsyncThunk("stude0nt/fetch", async (_, thunkAPI) => {
   try {
     const snapshot = await getDocs(studentCollection);
     return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
