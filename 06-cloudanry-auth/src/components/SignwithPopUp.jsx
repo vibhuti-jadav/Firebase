@@ -34,6 +34,8 @@ const SignwithPopUp = () => {
     }
   };
 
+  console.log(user)
+
   return (
      <>
       {error ? <p>{error.message}</p> : null}
